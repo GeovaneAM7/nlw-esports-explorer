@@ -13,6 +13,12 @@
 
         <link rel="stylesheet" href="./styles.css">
 
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+
     </head>
 
     <body> 
@@ -30,42 +36,47 @@
                 <div>
                     <h2>MEUS JOGOS</h2>
                     <p>Os games que mais curto jogar!</p>
+                    
+                    <div class="swiper mySwiper">
 
-                    <ul class="games-list">
-                        <li>
-                            <a 
-                            target="_blank" 
-                            href="https://www.twitch.tv/directory/game/Mobile%20Legends%3A%20Bang%20Bang">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/494184_IGDB-144x192.jpg" alt="Imagem do jogo Mobile Legends">
-                            <!-- target="_blank" abre uma nova aba ao clicar no link -->
-                            </a>
-                        </li>
+                        <ul class="games-list swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a 
+                                target="_blank" 
+                                href="https://www.twitch.tv/directory/game/Mobile%20Legends%3A%20Bang%20Bang">
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/494184_IGDB-144x192.jpg" alt="Imagem do jogo Mobile Legends">
+                                <!-- target="_blank" abre uma nova aba ao clicar no link -->
+                                </a>
+                            </li>
 
-                        <li>
-                            <a 
-                            target="_blank" 
-                            href="https://www.twitch.tv/directory/game/Elden%20Ring">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/512953_IGDB-144x192.jpg" alt="Imagem do jogo Elden Ring">
-                            </a>
-                        </li>
+                            <li class="swiper-slide">
+                                <a 
+                                target="_blank" 
+                                href="https://www.twitch.tv/directory/game/Elden%20Ring">
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/512953_IGDB-144x192.jpg" alt="Imagem do jogo Elden Ring">
+                                </a>
+                            </li>
 
-                        <li>
-                            <a 
-                            target="_blank" 
-                            href="https://www.twitch.tv/directory/game/Stardew%20Valley">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/490744_IGDB-144x192.jpg" alt="Imagem do jogo Stardew Valley">
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a 
-                            target="_blank" 
-                            href="https://www.twitch.tv/directory/game/Pok%C3%A9mon%20Omega%20Ruby%2FAlpha%20Sapphire">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/460327-144x192.jpg" alt="Imagem do jogo Pokemon ORAS 3DS">
-                            </a>
-                        </li>
-                        
-                    </ul> <!-- <ul> contém a lista de jogos com 4 elementos <li> -->
+                            <li class="swiper-slide">
+                                <a 
+                                target="_blank" 
+                                href="https://www.twitch.tv/directory/game/Stardew%20Valley">
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/490744_IGDB-144x192.jpg" alt="Imagem do jogo Stardew Valley">
+                                </a>
+                            </li>
+                            
+                            <li class="swiper-slide">
+                                <a 
+                                target="_blank" 
+                                href="https://www.twitch.tv/directory/game/Pok%C3%A9mon%20Omega%20Ruby%2FAlpha%20Sapphire">
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/460327-144x192.jpg" alt="Imagem do jogo Pokemon ORAS 3DS">
+                                </a>
+                            </li>
+                            
+                        </ul> <!-- <ul> contém a lista de jogos com 4 elementos <li> -->
+                    
+                    </div>
+
                 </div>
             </section> <!--jogos-->
 
@@ -148,8 +159,18 @@
             </section> <!--minhas redes-->
 
         </main>
-           
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> 
+
+        <!-- Initialize Swiper -->
+        <script>
+            new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                loop: true,
+            });
+        </script>
+
     </body>
 
 </html>
-
