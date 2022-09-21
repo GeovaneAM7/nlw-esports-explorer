@@ -48,12 +48,6 @@ header div:hover {
     transform: scale(1.1);
 }
 
-main * { 
-    /* 
-    border: 1px solid red; 
-    coloca uma borda vermelho em todos os elementos*/ 
-}
-
 main {
     max-width: 360px;
     width: 90%;
